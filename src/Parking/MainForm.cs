@@ -15,6 +15,8 @@ public partial class MainForm : Form
         var tabs = new TabControl { Dock = DockStyle.Fill };
         tabs.TabPages.Add(OwnersTab());
         tabs.TabPages.Add(CarsTab());
+        tabs.TabPages.Add(ParkingTab());
+        tabs.TabPages.Add(HistoryTab());
         Controls.Add(tabs);
     }
 

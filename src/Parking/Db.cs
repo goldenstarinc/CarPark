@@ -57,6 +57,7 @@ public static partial class Db
                  Plate TEXT NOT NULL UNIQUE,
                  Brand TEXT NOT NULL,
                  OwnerId INTEGER NOT NULL REFERENCES Owners(Id))");
+        InitParkings();
     }
 
     // ----- владельцы -----
