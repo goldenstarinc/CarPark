@@ -10,6 +10,8 @@ static class Program
 
         Console.WriteLine("CheckTests");
         CheckTests.Run();
+        Console.WriteLine("TariffTests");
+        TariffTests.Run();
 
         Console.WriteLine();
         Console.WriteLine("Прошло: " + passed + ", упало: " + failed);
