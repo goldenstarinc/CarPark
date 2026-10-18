@@ -17,6 +17,7 @@ public partial class MainForm : Form
         tabs.TabPages.Add(CarsTab());
         tabs.TabPages.Add(ParkingTab());
         tabs.TabPages.Add(HistoryTab());
+        tabs.TabPages.Add(DebtsTab());
         Controls.Add(tabs);
     }
 
