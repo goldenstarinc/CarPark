@@ -12,6 +12,8 @@ static class Program
         CheckTests.Run();
         Console.WriteLine("TariffTests");
         TariffTests.Run();
+        Console.WriteLine("DebtTests");
+        DebtTests.Run();
 
         Console.WriteLine();
         Console.WriteLine("Прошло: " + passed + ", упало: " + failed);
