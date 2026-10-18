@@ -40,7 +40,15 @@ public static partial class Db
         using var cmd = Make(c, sql, args);
         using var reader = cmd.ExecuteReader();
         var table = new DataTable();
-        table.Load(reader);
+        for (int i = 0; i < reader.FieldCount; i++)
+            table.Columns.Add(reader.GetName(i), typeof(object));
+        while (reader.Read())
+        {
+            var row = table.NewRow();
+            for (int i = 0; i < reader.FieldCount; i++)
+                row[i] = reader.GetValue(i);
+            table.Rows.Add(row);
+        }
         return table;
     }
 
