@@ -22,7 +22,7 @@ git tag v1.0                           # метка версии
 
 ## Удалённый репозиторий
 ```
-git remote add origin https://github.com/ВАШ_ЛОГИН/parking.git
+git remote add origin https://github.com/golden/parking.git
 git push -u origin --all
 git push origin --tags
 ```

@@ -11,6 +11,7 @@ public partial class MainForm : Form
         Height = 600;
         BackColor = Color.White;
         ForeColor = Color.Black;
+        AutoScaleMode = AutoScaleMode.Dpi;
 
         var tabs = new TabControl { Dock = DockStyle.Fill };
         tabs.TabPages.Add(OwnersTab());
